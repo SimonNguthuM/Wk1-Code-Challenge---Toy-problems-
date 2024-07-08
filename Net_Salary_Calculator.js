@@ -3,10 +3,10 @@ function calculateNetSalary() {
     let benefits = parseInt(prompt("Enter your benefits:"));
   
     const taxRates = {
-        tax1: { rate: 0.1, threshold: 24000 },
-        tax2: { rate: 0.25, threshold: 32333 },
-        tax3: { rate: 0.3, threshold: 40333 },
-        tax4: { rate: 0.325, threshold: 48333 }
+        tax1: { rate: 0.1, start: 24000 },
+        tax2: { rate: 0.25, start: 32333 },
+        tax3: { rate: 0.3, start: 40333 },
+        tax4: { rate: 0.325, start: 48333 }
     };
     const nhif = [
         { min: 0, max: 5999, rate: 150 },
