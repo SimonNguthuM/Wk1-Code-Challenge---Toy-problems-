@@ -16,11 +16,11 @@ function calculateNetSalary() {
 
     let netSalary = grossSalary - paye - nhifDeduction - totalNSSF;
 
-    console.log("Gross Salary: Ksh " + grossSalary.toFixed(2));
-    console.log("PAYE (Tax): Ksh " + paye.toFixed(2));
-    console.log("NHIF Deduction: Ksh " + nhifDeduction.toFixed(2));
-    console.log("NSSF Deduction: Ksh " + totalNSSF.toFixed(2));
-    console.log("Net Salary: Ksh " + netSalary.toFixed(2));
+    alert("Gross Salary: Ksh " + grossSalary.toFixed(2));
+    alert("PAYE (Tax): Ksh " + paye.toFixed(2));
+    alert("NHIF Deduction: Ksh " + nhifDeduction.toFixed(2));
+    alert("NSSF Deduction: Ksh " + totalNSSF.toFixed(2));
+    alert("Net Salary: Ksh " + netSalary.toFixed(2));
 }
 
 function calculateNSSFContribution(basicSalary) {
@@ -84,3 +84,6 @@ function calculatePAYE(annualTaxablePay) {
         return (2392000 + (annualTaxablePay - 9600000) * 0.35) / 12;
     }
 }
+
+calculateNetSalary()
+
